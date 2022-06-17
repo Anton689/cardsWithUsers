@@ -14,4 +14,5 @@ export const enum Routers {
     CARDS_PACK = "/cardspack",
     LEARN = "/learn",
     ASSESSMENT ="/assessment",
+    USERS = "/users",
 }

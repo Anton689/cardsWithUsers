@@ -12,6 +12,7 @@ import {ModelWindowDelete} from '../../Assets/ModelWindow/ModelDelete/ModelWindo
 import {ModelWindowAdd} from '../../Assets/ModelWindow/ModeleAdd/ModelWindowAdd';
 import {ModelWindowUpdate} from '../../Assets/ModelWindow/ModeleUpdate/ModelWindowUpdate';
 import {selectCardPacks, selectIsLoggedIn, selectUserId} from '../../store/selectors/Selectors';
+import {Users} from '../c4-users/Users';
 
 export const PackList = () => {
 
@@ -81,6 +82,9 @@ export const PackList = () => {
                     <div>
                         <Range min={min} max={max}/>
                     </div>
+                </div>
+                <div className={s.usersButton}>
+                    <Users/>
                 </div>
             </div>
             <div className={s.packList}>

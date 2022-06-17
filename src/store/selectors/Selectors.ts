@@ -25,3 +25,5 @@ export const selectEmail = (store: RootState) => store.profile.profile.email
 export const selectRegistrationSuccess = (store: RootState) => store.registration.registrationSuccess
 export const selectRegistrationErrorMsg = (store: RootState) => store.registration.errorMessage
 
+export const selectUsers = (store: RootState) => store.UsersReducer.users
+

@@ -17,6 +17,7 @@ import {PackList} from '../../с3-packs/PackList';
 import {CardsTable} from "../../с3-packs/p3-CardsTable/CardsTable";
 import {Learn} from '../../c4-learn/Learn/Learn';
 import {Assessment} from '../../c4-learn/Learn/assessment/Assessment';
+import {Users} from '../../c4-users/Users';
 
 function Body() {
     return (
@@ -32,7 +33,6 @@ function Body() {
                 <Route path = {Routers.REGISTRATION} element={<Registration/>}/>
                 <Route path = {Routers.ERROR} element={<Error/>}/>
                 <Route path = {Routers.PROFILE} element={<Profile/>}/>
-                {/*<Route path = {Routers.TEST} element={<ButtonsForPacks/>}/>*/}
                 <Route path = {`${Routers.CARDS_PACK}/:packId/:packName`} element={<CardsTable/>}/>
                 <Route path = {Routers.ENTERING_NEW_PASS} element={<PasswordEntering/>}/>
                 <Route path = {Routers.PASS_RECOV} element={<PasswordRecov/>}/>
@@ -40,6 +40,8 @@ function Body() {
                 <Route path = {`${Routers.PACK_LIST}/*`} element={<PackList/>}/>
                 <Route path = {`${Routers.LEARN}/:packId/:packName`} element={<Learn/>}/>
                 <Route path = {`${Routers.ASSESSMENT}/:cardId/:packName/:question/:answer`} element={<Assessment/>}/>
+                <Route path = {Routers.USERS} element={<Users/>}/>
+
             </Routes>
         </div>
     );
